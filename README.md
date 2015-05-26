@@ -89,6 +89,10 @@ ovs-vsctl get-fail-mode <bridge>
 ovs-ofctl dump-flows <bridge>
 ```
 
+```
+ovs-ofctl del-flows <bridge> 
+```
+
 ## ovs-dpctl
 
 ## ovs−appctl
