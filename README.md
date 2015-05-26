@@ -33,8 +33,6 @@ An overview of Openvswitch implementation
 ```
 
 
-
-
 ## ovs-vsctl
 
 ```
@@ -62,7 +60,7 @@ ovs-vsctl add-port <bridge> <interface>
 ```
 
 ```
-ovs-vsctl set-controller <bridge> tcp:<IP>:<port>
+ovs-vsctl set-controller <bridge> tcp:<IP>:<port> tcp:<IP>:<port>
 ```
 
 ```
@@ -73,8 +71,23 @@ ovs-vsctl get-controller <bridge>
 ovs-vsctl del-controller <bridge>
 ```
 
+```
+ovs-vsctl set-fail-mode <bridge> standalone
+```
+
+```
+ovs-vsctl set-fail-mode <bridge> secure
+```
+
+```
+ovs-vsctl get-fail-mode <bridge>
+```
 
 ## ovs-ofctl
+
+```
+ovs-ofctl dump-flows <bridge>
+```
 
 ## ovs-dpctl
 
